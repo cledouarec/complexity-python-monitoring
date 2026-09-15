@@ -72,9 +72,7 @@ docstring-code-line-length = 79
 [tool.ruff.lint]
 preview = true
 select = ["ALL"]
-# COM812 conflicts with the formatter; DOC502 rejects documenting exceptions
-# that propagate from helpers.
-ignore = ["COM812", "DOC502"]
+ignore = []
 
 [tool.ruff.lint.pylint]
 max-args = 6
@@ -83,7 +81,15 @@ max-args = 6
 convention = "google"
 
 [tool.ruff.lint.per-file-ignores]
-"tests/*" = ["INP001", "S101", "PLR2004", "D", "ANN", "S404", "S603", "S607"]
+"tests/*" = [
+    "assert",
+    "magic-value-comparison",
+    "D",
+    "ANN",
+    # conftest drives a real git; subprocess is the point.
+    "suspicious-subprocess-import",
+    "subprocess-without-shell-equals-true",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
