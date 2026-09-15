@@ -1,0 +1,21 @@
+{
+  "template": "https://github.com/cledouarec/template-python",
+  "commit": "6ac9cb58ac71a3e3a10faebaf0b78caf8dc89448",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "Complexity Python Monitoring",
+      "project_slug": "complexity-python-monitoring",
+      "package_name": "complexity_python_monitoring",
+      "project_description": "Tool to monitor the Python complexity",
+      "author_name": "Christophe Le Douarec",
+      "author_email": "ledouarec@gmail.com",
+      "github_username": "cledouarec",
+      "python_version": "3.14",
+      "cli": "yes",
+      "_template": "https://github.com/cledouarec/template-python",
+      "_commit": "6ac9cb58ac71a3e3a10faebaf0b78caf8dc89448"
+    }
+  },
+  "directory": null
+}
